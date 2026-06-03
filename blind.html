@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Blind Ranking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <meta name="apple-mobile-web-app-title" content="Blue Flash">
+  <link rel="stylesheet" href="css/blind.css">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+  <div id="editform">
+    <h2>Edit Number of Spaces</h2>
+    <input type="number" id="editnum" style="width:100%;"><br><br>
+    <button id="saveCategories">CONFIRM</button>
+    <button id="resetCategories">RESET</button>
+    <button id="cancelEdit">CANCEL</button>
+  </div>
+  <h1>Blind Ranking</h1>
+  <div class="navLinks"></div>
+  <div class="mode-toggle">
+    <div class="select-wrap">
+      <select class="dropdown" data-role="single"></select>
+    </div>
+  </div>
+  <div id="game">
+    <div class="card big-card center" id="cardToRank">
+      <img id="celeb-img" src="" alt="" draggable="false">
+      <p id="celeb-name">Loading...</p>
+    </div>
+
+    <div class="grid" id="rankingGrid"></div>
+  </div>
+  <div id="helpWrapper">
+    <button id="helpBtn">?</button>
+    <div id="helpTooltip">
+      <strong>How to Play</strong><br><br>
+      • Each round, you will be shown a person to rank from 1 to 10.<br>
+      • Click on the slot corresponding to the rank you want to give them.<br>
+      • Once ranked, they cannot be changed.<br>
+      • Once all 10 people have been ranked, your final ranking will be displayed.
+    </div>
+  </div>
+  <button id="editCategories">EDIT</button>
+  <script src="js/default.js"></script>
+  <script src="js/blind.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+#editCategories {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 8px 12px;
+            background: #0af;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: .2s;
+        }
+
+        #editCategories:hover {
+            background: rgba(0, 170, 255, 0.724);
+        }
+
+        #editform {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #222;
+            padding: 20px;
+            border: 2px solid #0af;
+            border-radius: 12px;
+            z-index: 1000;
+        }
+
+        #saveCategories,
+        #cancelEdit,
+        #resetCategories {
+            padding: 8px 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .card.center {
+            margin: 30px auto;
+            display: block;
+        }
+
+        .smash {
+            background: #1a1a1a;
+            color: #3cff9a;
+            border: 2px solid #3cff9a;
+            box-shadow: 0 0 15px rgba(60, 255, 154, .4);
+        }
+
+        .pass {
+            background: #1a1a1a;
+            color: #ff5c5c;
+            border: 2px solid #ff5c5c;
+            box-shadow: 0 0 15px rgba(255, 92, 92, .4);
+        }
+
+        .buttons button {
+            font-size: 1.4rem;
+            padding: 14px 28px;
+            margin: 0 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: .2s;
+        }
+
+        .buttons button:hover {
+            transform: scale(1.08);
+        }

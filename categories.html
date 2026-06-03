@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+    <h1>Blue Flash Games Categories</h1>
+    <div class="navLinks"></div>
+    <div class="mode-toggle">
+        <div class="select-wrap">
+            <select id="categorySelectPage" class="dropdown"></select>
+        </div>
+    </div>
+    <div id="peopleGrid" class="people-grid"></div>
+    <script src="js/default.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        let category = params.get("category") || "Female";
+
+        const categorySelect =
+            document.getElementById("categorySelectPage");
+
+        categorySelect.value = category;
+
+        loadPeopleData(() => {
+            renderCategory(category);
+        });
+
+        function renderCategory(category) {
+
+            const people = getPeople(category);
+
+            const grid = document.getElementById("peopleGrid");
+
+            grid.innerHTML = "";
+
+            Object.entries(people).forEach(([name, image]) => {
+
+                grid.innerHTML += `
+            <div class="card">
+                <img src="${image}" alt="${name}">
+                <p>${name}</p>
+            </div>
+        `;
+            });
+        }
+
+        categorySelect.addEventListener("change", () => {
+
+            category = categorySelect.value;
+
+            renderCategory(category);
+
+            history.replaceState(
+                null,
+                "",
+                `?category=${category}`
+            );
+        });
+
+        const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+        async function setCat() {
+            await delay(10);
+
+            document.getElementById("categorySelectPage").value = category;
+        }
+
+        setCat();
+
+    </script>
+</body>
+
+</html>

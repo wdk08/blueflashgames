@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smash or Pass</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <meta name="apple-mobile-web-app-title" content="Blue Flash">
+    <link rel="stylesheet" href="css/smashorpass.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+    <div id="editform">
+        <h2>Edit Categories</h2>
+        <label>Smash:</label><br>
+        <input type="text" id="editSmash" style="width:100%;"><br><br>
+        <label>Pass:</label><br>
+        <input type="text" id="editPass" style="width:100%;"><br><br>
+        <button id="saveCategories">CONFIRM</button>
+        <button id="resetCategories">RESET</button>
+        <button id="cancelEdit">CANCEL</button>
+    </div>
+    <h1>Smash or Pass</h1>
+    <div class="navLinks"></div>
+    <div class="mode-toggle">
+        <div class="select-wrap">
+            <select class="dropdown" data-role="single"></select>
+        </div>
+    </div>
+    <div id="game">
+        <div class="card big-card center" id="smashCard">
+            <img id="celeb-img" src="" alt="" draggable="false">
+            <p id="celeb-name">Loading...</p>
+        </div>
+
+        <div class="buttons">
+            <button class="smash" onclick="vote('smash')">Smash</button>
+            <button class="pass" onclick="vote('pass')">Pass</button>
+        </div>
+    </div>
+    <div id="helpWrapper">
+        <button id="helpBtn">?</button>
+        <div id="helpTooltip">
+            <strong>How to Play</strong><br><br>
+            • Each round, you will see a person<br>
+            • Click Smash or Pass
+        </div>
+    </div>
+    <button id="editCategories">EDIT</button>
+    <script src="js/default.js"></script>
+    <script src="js/smashorpass.js"></script>
+</body>
+
+</html>

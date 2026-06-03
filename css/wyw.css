@@ -1,0 +1,17 @@
+    .choices {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .winner {
+      margin-top: 30px;
+    }
+
+    .winner img {
+      width: 320px;
+      border-radius: 14px;
+      background: #000;
+    }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiss Marry Kill</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <meta name="apple-mobile-web-app-title" content="Blue Flash">
+  <link rel="stylesheet" href="css/kmk.css">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+  <div id="editform">
+    <h2>Edit Categories</h2>
+    <label>Kiss:</label><br>
+    <input type="text" id="editKiss" style="width:100%;"><br><br>
+    <label>Marry:</label><br>
+    <input type="text" id="editMarry" style="width:100%;"><br><br>
+    <label>Kill:</label><br>
+    <input type="text" id="editKill" style="width:100%;"><br><br>
+    <button id="saveCategories">CONFIRM</button>
+    <button id="resetCategories">RESET</button>
+    <button id="cancelEdit">CANCEL</button>
+  </div>
+  <h1>Kiss Marry Kill</h1>
+  <div class="navLinks"></div>
+  <div class="mode-toggle">
+    <div class="select-wrap">
+      <select class="dropdown" data-role="single"></select>
+    </div>
+  </div>
+  <div id="game">
+    <div class="celeb-grid"></div>
+
+    <div class="drop-zones">
+      <div class="zone" data-zone="Kiss">
+        <h3>💋 Kiss</h3>
+      </div>
+      <div class="zone" data-zone="Marry">
+        <h3>💍 Marry</h3>
+      </div>
+      <div class="zone" data-zone="Kill">
+        <h3>☠️ Kill</h3>
+      </div>
+    </div>
+  </div>
+  <div id="helpWrapper">
+    <button id="helpBtn">?</button>
+    <div id="helpTooltip">
+      <strong>How to Play</strong><br><br>
+      • Each round, you will be shown three people<br>
+      • Drag each person into Kiss, Marry, or Kill<br>
+      • Once all slots are filled, the next round begins<br><br>
+      <strong>Note</strong><br>
+      You can drag a person back to the pool or another slot
+    </div>
+  </div>
+  <button id="editCategories">EDIT</button>
+  <script src="js/default.js"></script>
+  <script src="js/kmk.js"></script>
+</body>
+
+</html>

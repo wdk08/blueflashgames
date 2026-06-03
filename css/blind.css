@@ -1,0 +1,130 @@
+    .card.center {
+        margin: 30px auto;
+        display: block;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 16px;
+        margin: 40px auto;
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    #editCategories {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 8px 12px;
+        background: #0af;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: .2s;
+        z-index: 100;
+    }
+
+    #editCategories:hover {
+        background: rgba(0, 170, 255, 0.724);
+    }
+
+    #editform {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #222;
+        padding: 20px;
+        border: 2px solid #0af;
+        border-radius: 12px;
+        z-index: 1000;
+        width: 300px;
+        max-width: 90vw;
+        box-sizing: border-box;
+    }
+
+    #editform h2 {
+        margin-top: 0;
+    }
+
+    #editform input {
+        width: 100%;
+        padding: 10px;
+        background: #111;
+        color: white;
+        border: 2px solid #444;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    #saveCategories,
+    #cancelEdit,
+    #resetCategories {
+        padding: 8px 12px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #saveCategories {
+        background: #0af;
+        color: white;
+    }
+
+    #resetCategories {
+        background: #f33;
+        color: white;
+    }
+
+    #cancelEdit {
+        background: #555;
+        color: white;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 16px;
+        margin: 40px auto;
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    .slot {
+        background: #1a1a1a;
+        border: 2px solid #444;
+        border-radius: 12px;
+        padding: 15px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        transition: .2s;
+        font-size: 16px;
+    }
+
+    .slot.filled {
+        background: #0f2f1f;
+        border-color: #3cff9a;
+        cursor: default;
+        transform: none;
+    }
+
+    .slot img {
+        max-height: 55px;
+        margin-top: 6px;
+        border-radius: 6px;
+        object-fit: contain;
+        background: #000;
+    }
+
+    .hidden {
+        display: none;
+    }

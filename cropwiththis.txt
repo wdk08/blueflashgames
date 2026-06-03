@@ -1,0 +1,4 @@
+mkdir cropped
+for f in *.{jpg,jpeg,png}; do
+  magick "$f" -gravity center -resize 420x520^ -extent 420x520 -quality 90 "cropped/${f%.*}.jpg"
+done

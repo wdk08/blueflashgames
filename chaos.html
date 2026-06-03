@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/default.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balance of the Gauntlet</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <meta name="apple-mobile-web-app-title" content="Blue Flash">
+  <link rel="stylesheet" href="css/chaos.css">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+  <h1>Balance of the Gauntlet</h1>
+  <div class="navLinks"></div>
+  <div class="mode-toggle">
+    <div class="select-wrap">
+      <select class="dropdown" data-role="left"></select>
+    </div>
+    <div class="select-wrap">
+      <select class="dropdown" data-role="right"></select>
+    </div>
+  </div>
+    <div class="stones">
+      <button class="stone-btn" id="time">⏳ Time</button>
+      <button class="stone-btn" id="soul">💀 Soul</button>
+      <button class="stone-btn" id="space">🌌 Space</button>
+      <button class="stone-btn" id="reality">🪞 Reality</button>
+    </div>
+
+    <div id="lists">
+      <div class="list">
+        <h3>✅ Keep</h3>
+        <ul id="keepList"></ul>
+      </div>
+      <div class="list">
+        <h3>❌ Gone</h3>
+        <ul id="goneList"></ul>
+      </div>
+    </div>
+    <div class="card" id="CardA">
+      <img id="imgA" draggable="false">
+      <p id="nameA">Loading...</p>
+    </div>
+    <div class="card" id="CardB">
+      <img id="imgB" draggable="false">
+      <p id="nameB">Loading...</p>
+    </div>
+
+  <div id="helpWrapper">
+    <button id="helpBtn">?</button>
+    <div id="helpTooltip">
+      <strong>How to Play</strong><br><br>
+      • Pick one card each round<br>
+      • Who you choose goes to <b>Keep</b>, others go to <b>Gone</b><br>
+      • Max 15 in Keep — oldest gets removed<br><br>
+      <b>Stones:</b><br>
+      ⏳ Time: Undo last snap<br>
+      🌌 Space: Protect one player (1 snap)<br>
+      💀 Soul: Sacrifice one, restore one<br>
+      🪞 Reality: Restore from Gone
+    </div>
+  </div>
+  <script src="js/default.js"></script>
+  <script src="js/chaos.js"></script>
+</body>
+
+</html>

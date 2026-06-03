@@ -1,0 +1,62 @@
+    .rooms {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+    }
+
+    .room {
+      background: #1a1a1a;
+      border: 2px solid #444;
+      border-radius: 14px;
+      padding: 16px;
+      cursor: pointer;
+      transition: .2s;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .room:hover {
+      transform: translateY(-4px);
+      border-color: #3cff9a;
+    }
+
+    .room-title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      opacity: .85;
+    }
+
+    .room-cards {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .room .card {
+      width: 95px;
+      padding: 8px;
+    }
+
+    .room .card img {
+      height: 110px;
+      object-fit: contain;
+      background: #000;
+      border-radius: 8px;
+    }
+
+    .room .card p {
+      font-size: 12px;
+      margin-top: 4px;
+      text-align: center;
+    }
+
+    .discarded {
+      opacity: .25;
+      pointer-events: none;
+    }

@@ -1,0 +1,195 @@
+/* =========================
+   MOBILE OVERRIDES
+========================= */
+/*
+@media (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .navLinks a {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .mode-toggle {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .dropdown {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+  }
+
+  .choices {
+    gap: 16px;
+  }
+
+  .choices .card {
+    max-width: 260px;
+  }
+
+  .winner img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .tiers {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .tier {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .tier-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tier-label {
+    font-size: 20px;
+  }
+
+  .tier-count {
+    font-size: 13px;
+  }
+
+  .tier-cards {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .tier-card {
+    width: 46%;
+    max-width: 160px;
+  }
+
+  .tier-card img {
+    height: 140px;
+  }
+
+  #editCategories,
+  #helpWrapper {
+    position: static;
+  }
+
+  #helpWrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #editCategories {
+    display: block;
+    width: 100%;
+    margin: 12px auto 0;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  #helpBtn {
+    width: 100%;
+    max-width: 320px;
+    height: 44px;
+    font-size: 16px;
+  }
+
+  #helpTooltip {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 360px;
+    font-size: 16px;
+    z-index: 300;
+  }
+  #editform {
+    width: 92%;
+    max-width: 360px;
+  }
+
+  #saveCategories,
+  #resetCategories,
+  #cancelEdit {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  button,
+  .card,
+  .tier {
+    min-height: 44px;
+  }
+    .slot {
+    height: auto;              
+    min-height: 80px;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+
+  .slot img {
+    max-height: 80px;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 6px;
+  }
+
+  .slot strong {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+
+.grid {
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.slot {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+}
+*/

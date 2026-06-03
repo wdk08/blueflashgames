@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Draft Pick</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <meta name="apple-mobile-web-app-title" content="Blue Flash">
+  <link rel="stylesheet" href="css/draft.css">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+  <h1>Draft Pick</h1>
+  <div class="navLinks"></div>
+  <div class="mode-toggle">
+    <div class="select-wrap">
+      <select class="dropdown" data-role="single"></select>
+    </div>
+  </div>
+  <div id="game">
+    <h2 id="roundText">Round 1 of 5</h2>
+    <div class="cards" id="cards"></div>
+    <div class="board" id="board"></div>
+  </div>
+  <div id="helpWrapper">
+    <button id="helpBtn">?</button>
+    <div id="helpTooltip">
+      <strong>How to Play</strong><br><br>
+      • Each round, you will be shown two people<br>
+      • Click who you want to keep<br>
+      • The other is gone forever<br>
+      • 5 rounds total
+    </div>
+  </div>
+  <script src="js/default.js"></script>
+  <script src="js/draft.js"></script>
+</body>
+
+</html>

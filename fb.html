@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Build the Lineup</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <meta name="apple-mobile-web-app-title" content="Blue Flash">
+  <link rel="stylesheet" href="css/fb.css">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+  <h1>Build the Lineup</h1>
+  <div class="navLinks"></div>
+  <div class="mode-toggle">
+    <div class="select-wrap">
+      <select class="dropdown" data-role="single"></select>
+    </div>
+  </div>
+  <div id="game">
+    <!-- ACTIVE CARD -->
+    <div id="cardMount"></div>
+
+    <!-- FIELD -->
+    <div class="field">
+      <div class="field-grid">
+        <div class="slot" data-pos="WR1" style="grid-column:1;">WR1</div>
+        <div class="slot" data-pos="FLEX" style="grid-column:3;">FLEX</div>
+
+        <div class="slot" data-pos="LT" style="grid-column:5;">LT</div>
+        <div class="slot" data-pos="LG" style="grid-column:6;">LG</div>
+        <div class="slot" data-pos="C" style="grid-column:7;">C</div>
+        <div class="slot" data-pos="RG" style="grid-column:8;">RG</div>
+        <div class="slot" data-pos="RT" style="grid-column:9;">RT</div>
+
+        <div class="slot" data-pos="TE" style="grid-column:10;">TE</div>
+        <div class="slot" data-pos="WR2" style="grid-column:11;">WR2</div>
+
+        <div class="slot" data-pos="QB" style="grid-column:7;grid-row:2;">QB</div>
+        <div class="slot" data-pos="RB" style="grid-column:7;grid-row:3;">RB</div>
+      </div>
+    </div>
+  </div>
+  <div id="helpWrapper">
+    <button id="helpBtn">?</button>
+    <div id="helpTooltip">
+      <strong>How to Play</strong><br><br>
+      • Drag each person onto the field<br>
+      • Fill all positions to complete the lineup<br>
+      • You can move players between slots
+    </div>
+  </div>
+  <script src="js/default.js"></script>
+  <script src="js/fb.js"></script>
+</body>
+
+</html>

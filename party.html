@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Party Builder</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <meta name="apple-mobile-web-app-title" content="Blue Flash">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/party.css">
+</head>
+
+<body>
+  <div id="slotEditor">
+    <h2>Edit Party Slots</h2>
+    <p>One slot per line</p>
+    <textarea id="slotInput" rows="6"></textarea>
+    <div class="toggle">
+      <input type="checkbox" id="allowRepeats">
+      <label for="allowRepeats">Allow character repeats</label>
+    </div>
+    <br>
+    <button id="saveCategories" type="button">CONFIRM</button>
+    <button id="resetDefaults" type="button">RESET</button>
+    <button id="cancelEdit" type="button">CANCEL</button>
+  </div>
+  <h1>Party Builder</h1>
+  <div class="navLinks"></div>
+  <div class="mode-toggle">
+    <div class="select-wrap">
+      <select class="dropdown" data-role="single"></select>
+    </div>
+  </div>
+  <div id="game">
+    <div class="card center hoverable" id="currentCard">
+      <img id="celeb-img" draggable="false">
+      <p id="celeb-name">Loading...</p>
+    </div>
+
+    <!-- PARTY SLOTS -->
+    <div class="slots"></div>
+  </div>
+  <div id="helpWrapper">
+    <button id="helpBtn">?</button>
+    <div id="helpTooltip">
+      <strong>How to Play</strong><br><br>
+      • You will be shown one person at a time.<br>
+      • Click a party slot to assign them.<br>
+      • Each slot can only be filled once.<br>
+      • Finish all slots to complete the party.<br>
+      • Use EDIT to change slots or allow repeats.
+    </div>
+  </div>
+  <button id="editSlots" type="button">EDIT</button>
+  <script src="js/default.js"></script>
+  <script src="js/party.js"></script>
+</body>
+
+</html>

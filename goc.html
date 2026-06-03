@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Would You Rather</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <meta name="apple-mobile-web-app-title" content="Blue Flash">
+  <style>
+    .choices {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+  </style>
+  <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+  <h1>Would You Rather</h1>
+  <div class="navLinks"></div>
+  <div class="mode-toggle">
+    <div class="select-wrap">
+      <select class="dropdown" data-role="left"></select>
+    </div>
+    <div class="select-wrap">
+      <select class="dropdown" data-role="right"></select>
+    </div>
+  </div>
+  <div id="game">
+    <div class="choices"></div>
+  </div>
+  <div id="helpWrapper">
+    <button id="helpBtn">?</button>
+    <div id="helpTooltip">
+      <strong>How to Play</strong><br><br>
+      • Each round, choose between the two options<br>
+      • Your choices are saved in order
+    </div>
+  </div>
+  <script src="js/default.js"></script>
+  <script src="js/goc.js"></script>
+</body>
+
+</html>
