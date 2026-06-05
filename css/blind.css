@@ -3,14 +3,14 @@
         display: block;
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 16px;
-        margin: 40px auto;
-        width: 90%;
-        max-width: 1000px;
-    }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1000px;
+}
 
     #editCategories {
         position: absolute;
@@ -84,15 +84,6 @@
     #cancelEdit {
         background: #555;
         color: white;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 16px;
-        margin: 40px auto;
-        width: 90%;
-        max-width: 1000px;
     }
 
     .slot {
