@@ -49,6 +49,7 @@ const options = `
   <option value="ST">Stranger Things</option>
   <option value="SW">Star Wars</option>
   <option value="Marvel">Marvel</option>
+  <option value="Anime">Anime</option>
 `;
 
 function populateDropdowns() {
