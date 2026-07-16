@@ -144,7 +144,9 @@
     "Eduardo Franco": "images/EduardoFranco.jpg",
     "EwanMcGregor": "images/EwanMcGregor.jpg",
     "Ian McDiarmid": "images/IanMcDiarmid.jpg",
-    "Harrison Ford": "images/HarrisonFord.jpg"
+    "Harrison Ford": "images/HarrisonFord.jpg",
+    "Noah Jupe": "images/noahJupe.jpg",
+    "Jace Norman": "images/jaceNorman.jpg"
   },
   "Athletes": {
     "Joe Burrow": "images/JoeBurrow.jpg",
@@ -249,11 +251,28 @@
     "Sheev Palpatine": "images/IanMcDiarmid.jpg"
   },
   "Marvel": {
-    "Aamazing Spider-Man": "images/AndrewGarfield.jpg",
+    "Aamazing Spider-Man": "images/theAmazingSpiderman.jpg",
     "Tony Stark/Iron Man": "images/RDJ.jpg",
     "Thor": "images/ChrisHemsworth.jpg",
     "Spider-Man": "images/TomHolland.jpg",
     "Mary Jane Watson": "images/KirstenDunst.jpg",
-    "Natasha Romanoff/Black Widow": "images/ScarlettJohansson.jpg"
+    "Natasha Romanoff/Black Widow": "images/ScarlettJohansson.jpg",
+    "Steve Rodgers/Captain America": "images/captainAmerica.jpg",
+    "Jean Grey/Phoenix": "images/jeanGrey.jpg"
+  },
+  "Anime": {
+    "Sakura": "images/sakura.jpg",
+    "One Punch Man": "images/onePunchMan.jpg",
+    "Naruto": "images/naruto.jpg",
+    "Monkey De Lofi": "images/monkeyDeLofi.jpg",
+    "Momo": "images/momo.jpg",
+    "Goku": "images/goku.jpg",
+    "Gojo": "images/goko.jpg",
+    "Deku": "images/Deku.jpg",
+    "Bakugo": "images/bakugo.jpg",
+    "Saske": "images/saske.jpg",
+    "Shoto": "images/shoto.jpg",
+    "Umaraka": "images/umaraka.jpg",
+    "Zoro": "images/Zoro.jpg"
   }
 }
